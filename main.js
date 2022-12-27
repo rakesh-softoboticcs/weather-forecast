@@ -1,4 +1,5 @@
 import './style.css'
 
+import { getWeather } from './weather'
 
-console.log("hello world")
+getWeather(10,10,Intl.DateTimeFormat().resolvedOptions().timeZone).then(res=>console.log(res.data))
